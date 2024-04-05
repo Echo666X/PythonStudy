@@ -3,7 +3,8 @@
 #in Python,a variable is a label that you can assign a valuen to it
 # to define a variable,you can use the following syntax
 
-variable_name = value1
+variable_name = 2
+print(variable_name)
 # "=" is the assignment operator
 
 # the naming rules:
