@@ -21,4 +21,5 @@ print(greet("Echo666X"))
 def greet_name(name_ = "there",message_ = "Hi"):
     return f"{message_} {name_}"
 
-print(greet_name(message_="hello"))
+print(greet_name(message_="hello")) 
+#if there is nothing on the left_hand side of the equal sign, the greet_name function will treat "hello" as the first argument,not the second one
