@@ -90,28 +90,35 @@ money = input()
 
 if money[0] in ['&']:
     
-    USD = eval(money[1:])/6.78
+    USD = float(money[1:])/6.78
 
     print(f"${USD:.2f}")
     
 elif money[:3] in ['RMB']:
     
-    USD = eval(money[3:])/6.78
+    USD = float(money[3:])/6.78
     
     print(f"USD{USD:.2f}")
     
 elif money[0] in ['$']:
 
-    RMB = eval(money[1:])*6.78
+    RMB = float(money[1:])*6.78
 
     print(f"&{RMB:.2f}")
 
 elif money[:3] in ['USD']:
     
-    RMB = eval(money[3:])*6.78
+    RMB = float(money[3:])*6.78
     
     print(f"RMB{RMB:.2f}")
 
 else:
 
     print("Error")
+    
+# 字符串切片：从一个字符串中提取新的内容组成新的字符串
+# the basical syntax of it is as follows:
+# string[start:stop:step]
+# start: 切片的起始位置，包含该字符，默认为0
+# stop：切片的结束位置，不包含该字符，默认为字符串长度
+# step：切片步长，默认为1，表示每次移动一个字符
