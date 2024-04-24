@@ -39,3 +39,12 @@ companies_test = [('Google', 2019, 134.81),
 
 companies_test.sort(key=lambda company:company[2],reverse=True)
 print(companies_test)
+
+# if you don't want to modify the original list, you can use the sorted() function
+# the usage of sorted() function is almost the same as the usage of the sort() function
+# the basic syntax of the sorted() function is as follows:
+# sorted(list, reverse=)
+numbers_test = [5,89,4,3,6,7,6,21,8]
+numbers_test1 = sorted(numbers_test,reverse=True)
+print(numbers_test)
+print(numbers_test1)
