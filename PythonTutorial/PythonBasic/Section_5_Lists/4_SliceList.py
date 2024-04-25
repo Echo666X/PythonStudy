@@ -1,7 +1,7 @@
 # in this tutorial, you’ll learn about Python list slice and how to use it to manipulate lists effectively.
 
 # to get a sublist, you use the slice notation, which allows you to get a sublist from a list.
-# the basical syntax of list slice is as follows:
+# the basic syntax of list slice is as follows:
 # sub_list = list[start:end:step]
 
 # you can see the introduction to string slice in test4.20.3, the string slicing is similar to the list slicing

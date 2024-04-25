@@ -1,7 +1,7 @@
 # in this tutorial, you’ll learn how to use the Python List sort() method to sort a list.
 
 # the sort() method sorts the original list in place, which means the sort() method modifies the order of elements in the list
-# the basical syntax of sort() is as follows:
+# the basic syntax of sort() is as follows:
 list_test = [1,8,6,4,7,6,2,9]
 list_test.sort()
 print(list_test) 
