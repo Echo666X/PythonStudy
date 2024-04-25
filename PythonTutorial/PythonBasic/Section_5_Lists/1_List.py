@@ -1,7 +1,7 @@
 # in this tutorial, you’ll learn about Python List type and how to manipulate list elements effectively.
 # a list is an ordered collection of items
 
-# the baiscal syntax of list is as follows:
+# the basic syntax of list is as follows:
 # list_name = [item1,item2,item3,...]
 # the items can be numbers, strings or other lists
 
