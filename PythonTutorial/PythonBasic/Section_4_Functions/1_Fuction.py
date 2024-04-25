@@ -3,7 +3,7 @@
 # in practice,you use functions to divide a large program into smaller and more manageable parts
 # the functions will make you program easier to develop, read, test, and maintain
 
-#the basical form of funtion is as follows:
+#the basic form of funtion is as follows:
 def greet():
     """Display a greeting to users"""
     print("hi")

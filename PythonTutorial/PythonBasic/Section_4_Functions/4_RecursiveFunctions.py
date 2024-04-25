@@ -3,7 +3,7 @@
 # in programming, you will often find the recursive functions used in data structures and algorithms like trees, graphs, and binary searches
 
 # it needs to have a condition to stop calling itself, so you need to add an if statement to stop it under a certain conditions
-# the basical syntax of recursive functions is as follows:
+# the basic syntax of recursive functions is as follows:
 # def fn():
 #     # ...
 #     if condition:

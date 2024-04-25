@@ -7,7 +7,7 @@
 # however, the function call "functio(value1,value2)" has a readability issue, by looking at it only, you don't know which argument is paramter1 and which one is parameter2
 # to improve the readability, python introduces the keyword arguments
 
-#the basical syntax of keyword arguments is as follows:
+#the basic syntax of keyword arguments is as follows:
 #fn(parameter1 = value1,parameter2 = value2)
 
 # for example:
