@@ -10,8 +10,7 @@
 # as you can see, the set and the dictionary are both use the curly braces, therefore, you need to do something to distinguish them
 # for example, an empty item in a dictionary can be created as "empty_dict = {}" but in a set it should be created as empty_set = set()
 # the set() function is a built-in function
-# it should be noted that an empty set evaluates to Falsse in boolean context
-
+# it should be noted that an empty set evaluates to False in boolean context
 empty_set = set()
 if not empty_set:
     print("an empty set valuates to False in boolean context")
