@@ -7,3 +7,5 @@ skills = Kevin_skills.intersection(Mary_skills)
 print(skills)
 skills = Kevin_skills & Mary_skills
 print(skills)
+
+# similarly, the intersection() can accept any iterables but the intersection operator can only accepts sets
