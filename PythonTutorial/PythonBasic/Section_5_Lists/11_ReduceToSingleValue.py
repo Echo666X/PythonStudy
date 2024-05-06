@@ -16,3 +16,6 @@ import functools
 numbers_reduce = [1,84,65,25,79,99,6565,6]
 numbers_reduce_test = functools.reduce(lambda a,b:a+b,numbers_reduce)
 print(numbers_reduce_test)
+# in my later use, I found that you can use sumi() function directly
+print(sum(numbers_reduce))
+print(sum(numbers_reduce)/len(numbers_reduce))

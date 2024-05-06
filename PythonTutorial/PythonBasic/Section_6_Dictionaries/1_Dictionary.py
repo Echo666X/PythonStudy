@@ -54,3 +54,11 @@ for key in person.keys():
 # 3)same as above, you can use the values() method to return a list of values without any keys
 for value in person.values():
     print(value)
+
+# in python, you can use ** to unpack a few dictionaries and insert its contents into another dictionary
+# this is typically used for merging dictionaries
+# for example:
+test_dict_1 = {'a':1,'b':2}
+test_dict_2 = {'c':3,'d':4}
+new_dict = {**test_dict_1,**test_dict_2}
+print(new_dict)
