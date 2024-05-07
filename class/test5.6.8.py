@@ -14,30 +14,52 @@
 # 【样例输出】
 
 # none
-def is_armstrong(num):
-    # 计算各位数字的立方和
-    digit1 = num // 100
-    digit2 = (num // 10) % 10
-    digit3 = num % 10
-    armstrong_sum = digit1 ** 3 + digit2 ** 3 + digit3 ** 3
 
-    # 判断是否为水仙花数
-    return armstrong_sum == num
 
-# 输入整数
-num_input = int(input())
+# # def is_armstrong(num):
+# #     # 计算各位数字的立方和
+# #     digit1 = num // 100
+# #     digit2 = (num // 10) % 10
+# #     digit3 = num % 10
+# #     armstrong_sum = digit1 ** 3 + digit2 ** 3 + digit3 ** 3
 
-# 用于标记是否找到水仙花数
-found = False
+# #     # 判断是否为水仙花数
+# #     return armstrong_sum == num
 
-# 遍历范围从100到输入整数
-start = 100 if num_input >= 100 else num_input
-stop = 1000 if num_input >1000 else num_input+1
-for num in range(start, stop):
-    if is_armstrong(num):
+# # # 输入整数
+# # num_input = int(input())
+
+# # # 用于标记是否找到水仙花数
+# # found = False
+
+# # # 遍历范围从100到输入整数
+# # start = 100 if num_input >= 100 else num_input
+# # stop = 1000 if num_input >1000 else num_input+1
+# # for num in range(start, stop):
+# #     if is_armstrong(num):
+# #         print(num)
+# #         found = True
+
+# # # 如果没有找到水仙花数，输出 "none"
+# # if not found:
+# #     print("none", end="")
+
+def daffodils(n):
+    digit1 = n//100
+    digit2 = (n//10)%10
+    digit3 = n%10
+    digit_test = digit1**3 + digit2**3 + digit3**3
+    
+    return digit_test == n
+
+test_if_found = False
+
+number = int(input())
+stop = 1000 if number >= 1000 else number
+for num in range (100,stop):
+    if daffodils(num) == True:
         print(num)
-        found = True
-
-# 如果没有找到水仙花数，输出 "none"
-if not found:
-    print("none", end="")
+        test_if_found = True
+if test_if_found == False:
+    print('none')
+        
