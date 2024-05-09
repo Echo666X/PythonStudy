@@ -44,6 +44,6 @@ same_pic = 0
 for i in range(m):
     for j in range(n):
         if image_1[i][j] == image_2[i][j]:
-                same_pic += 1
+            same_pic += 1
 similarity = same_pic*100/(m*n)
 print(f"{similarity:.2f}")
