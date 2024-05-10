@@ -13,8 +13,8 @@
 # 【样例输出2】10203040506070809100
 
 def  main():
-        a=int(input())
-        calculate_sum(a)
+    a=int(input())
+    calculate_sum(a)
 def calculate_sum(a):
     result = 0
     current = a
