@@ -40,9 +40,9 @@
 # 8 10 12
 # ```
 
-n,m = map(int,input().split(' '))
-matrix_1 = [list(map(int,input().split(' '))) for _ in range(n)]
-matrix_2 = [list(map(int,input().split(' '))) for _ in range(n)]
+n,m = map(int,input().split())
+matrix_1 = [list(map(int,input().split())) for _ in range(n)]
+matrix_2 = [list(map(int,input().split())) for _ in range(n)]
 matrix_final = [[0]*m for _ in range(n)]
 for i in range(n):
     for j in range(m):
