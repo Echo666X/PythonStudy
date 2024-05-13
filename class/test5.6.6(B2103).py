@@ -37,9 +37,9 @@
 # ```
 # 44.44
 # ```
-m,n = map(int,input().split(' '))
-image_1 = [list(map(int,input().split(' '))) for _ in range(m)]
-image_2 = [list(map(int,input().split(' '))) for _ in range(m)]
+m,n = map(int, input().split())
+image_1 = [list(map(int,input().split())) for _ in range(m)]
+image_2 = [list(map(int,input().split())) for _ in range(m)]
 same_pic = 0
 for i in range(m):
     for j in range(n):
