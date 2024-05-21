@@ -32,5 +32,5 @@ ttk.Button(root,text="Scissors",command=lambda :output("Scissors")).pack()
 # limitations fo command binding
 # 1) the command option is not available in all widgets, it is limited to the Button and some other widgets
 # 2) the command button binds to the left click and the backspace, but doesn't bind to the Return key,unfortunately, you cannot change the binding of the command function easily
-
+ 
 root.mainloop()
