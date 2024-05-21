@@ -52,5 +52,5 @@ root.bind_class("Entrty","<Control-V>",log)
 # sometimes, you may want to undo the effect of an earlier binding, to do it, you can use the unbind() method
 # widget.unbind(event)
 # the following example unbinds the event from the button :
-button.unbind('<Return>')
+# button.unbind('<Return>')
 root.mainloop()
