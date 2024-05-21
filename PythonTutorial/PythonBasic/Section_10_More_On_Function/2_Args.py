@@ -6,10 +6,10 @@ print(f'x={x},y={y},z={z}')
 def add(a,b,*c):
     '''the *c is a special arguments, 
     it's like tuple unpacking except that the args is a tuple, not a list '''
-    total = a + b
+    total_abc = a + b
     for num in c:
-        total += num
-    return total
+        total_abc += num
+    return total_abc
 
 result_1 = add(10,20,30,40,50)
 print(result_1)
@@ -48,7 +48,7 @@ total_(1,2,3,4,num=5)
 def point(x,y):
     return f'{x},{y}'
 
-a = (0,0)
+test_a = (0,0)
 # if you pass 'a' to the point function directly, it'll be a typeerror
-output_test = point(*a)
+output_test = point(*test_a)
 print(output_test)
