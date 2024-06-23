@@ -19,5 +19,5 @@ name_capitalized = {name.capitalize() for name in names}
 print(name_capitalized)
 
 # now suppose that 'ECHO' is not a name and you want to get a new set of the name in correct formatt
-name_capitalized = {name.capitalize() for name in names if name.lower != 'echo' }
+name_capitalized = {name.capitalize() for name in names if name.lower() != 'echo' }
 print(name_capitalized)

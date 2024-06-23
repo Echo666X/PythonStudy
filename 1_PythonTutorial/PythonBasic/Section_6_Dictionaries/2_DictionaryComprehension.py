@@ -16,7 +16,7 @@ stocks = {
     'LVGO': 144
 }
 # suppose that you want to increase the price of each stock by 2%
-new_stocks = {name:stock*1.2 for (name,stock) in stocks.items()}
+new_stocks = {name:stock*1.2 for name,stock in stocks.items()}
 print(new_stocks)
 
 # and you can use the comprehension to filter a dictionary
