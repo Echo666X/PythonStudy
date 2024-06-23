@@ -34,4 +34,4 @@ def create_new_list(list_):
 
 list_test = list(input()[1:-1].split(","))
 final = create_new_list(list_test)
-print("["+', '.join(final)+']')
+print("["+','.join(final)+']')
