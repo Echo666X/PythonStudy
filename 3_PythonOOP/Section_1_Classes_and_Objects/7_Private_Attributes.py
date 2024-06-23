@@ -41,3 +41,59 @@ counter.increment()
 counter.current = 999
 
 print(counter.value()) # the output is 999
+
+# in order to prevent the current attribute from modifying outside of the Counter class
+# the private attributes come into playdef 
+
+
+# private attributes
+# private attributes can be only accessible from the methods of the class
+# in other words, they cannot be accessible from outside of the class
+
+# python doesn't have a concept of private attributes, in other words, all attributes are accessible from the outside of a class
+# by convention, you can define a private attribute by prefixing a single underscore: _attribute
+# for example:
+class PrivatecCounter:
+    def __init__(self) -> None:
+        self._current = 0  # the _current is a private attribute
+    def increment(self):
+        self._current += 1
+    def value(self):
+        return self._current
+    def reset(self):
+        self._current = 0
+        
+counter = Counter()
+
+counter.increment()
+counter.increment()
+
+print(f'{counter.value()}')
+# such properties are renamed by the python interpreter, making them inaccessible directly from outside
+
+
+# name mangling with double underscores
+# if you prefix an attribute name with double underscores(__), 
+# python will automatically change the name of the __attribute to:
+# _class__attribute
+# which is called the name mangling in python
+
+# by doing this, you cannot access the __attribute directly from the outside of a class like: instance.__attribute
+# however, you still can access it using the _class__attribute name:
+# instance._class__attribute
+# for example:
+class CounterNameMangling:
+    def __init__(self) -> None:
+        self.__current = 0
+    def increment(self):
+        self.__current += 1
+    def value(self):
+        return self.__current
+    def reset(self):
+        self.__current = 0
+
+counter_1 = CounterNameMangling()
+# now, if you attempt to access __current attribute like this: counter.__current
+# you will get an error
+# however, you can access the __current attribute as _Counter__attribute:
+print(counter_1._CounterNameMangling__current)
