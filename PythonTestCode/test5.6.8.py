@@ -55,7 +55,7 @@ def daffodils(n):
 test_if_found = False
 
 number = int(input())
-stop = 1000 if number >= 1000 else number
+stop = 1000 if number >= 1000 else number+1
 for num in range (100,stop):
     if daffodils(num) == True:
         print(num)
