@@ -5,6 +5,7 @@
 
 class Request:
     def send():
+        ''' test function'''
         print('Sent')
         
 # and you can call the send() function via the Request class like this:
@@ -43,6 +44,7 @@ Request_1.send(http_request_1)
 class Request_2:
     def send(self):
         print('send',self)
+        print('send')
         
 http_request_2 = Request_2()
 http_request_2.send()

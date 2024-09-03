@@ -21,7 +21,7 @@ home = HtmlDocument() # the home is an instance of the HtmlDocument class, it ha
 pprint(home.__dict__)
 
 # unlike the __dict__ attribute of a class, the type of the __dict__ attribute of an instance is a dictionary
-print(type(HtmlDocument.__dict__)) # the output is mappingproxy
+print(type(HtmlDocument.__dict__)) # the output is mappingproxy, a read-only mapping of a dictionary.
 print(type(home.__dict__)) # the output is dict
 
 # since the dictionary is mutable, you can mutate it e.g., adding a new element to the dictionary
