@@ -1,4 +1,4 @@
-# in this tutorial, you will learn about python static methods and hopw to use them to creat ea utility class
+# in this tutorial, you will learn about python static methods and hopw to use them to creat a utility class
 
 # the instance methods can access and modify the state of the bound object, and the class methods can access and modify the class state.
 # unlike instance methods, static methods are not bound to an object, in other word, static methods cannot access and modify an object state
