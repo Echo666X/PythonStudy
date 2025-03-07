@@ -51,10 +51,10 @@ class Person_1:
     def set_age(self, age):
         if age <= 0:
             raise ValueError('The age must be positive')
-        self._age = age
+        self.age = age
 
     def get_age(self):
-        return self._age
+        return self.age
 
     age = property(fget=get_age, fset=set_age)
 # note that it is a class attribute not an instance attribute
