@@ -1,0 +1,34 @@
+# The following program shows a window that displays a QLabel widget:
+
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
+from PyQt6.QtGui import QFont
+
+
+class MainWindow(QWidget):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.setWindowTitle('PyQt Label Widget')
+        self.setGeometry(100, 100, 320, 210)
+
+        # create a QLabel widget
+        label = QLabel('This is a QLabel widget')
+
+        # place the widget on the window
+        layout = QVBoxLayout()
+        layout.addWidget(label)
+        self.setLayout(layout)
+
+        # show the window
+        self.show()
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+
+    # create the main window
+    window = MainWindow()
+
+    # start the event loop
+    sys.exit(app.exec())
